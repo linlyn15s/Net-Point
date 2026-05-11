@@ -1,0 +1,833 @@
+/* ================= ESTILOS GENERALES ================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Helvetica, sans-serif;
+  background-color: #f8f5f0;
+  color: #222;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  background-color: #35457b;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* ================= MENÚ ================= */
+
+.menu-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.menu-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu-links li a:hover {
+  color: #180067;
+}
+
+.btn-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  background: linear-gradient(
+    rgba(34, 38, 67, 0.545),
+    rgba(51, 58, 108, 0.82)
+  ),
+  url("../img/ran.png");
+
+  background-size: cover;
+  background-position: center 26%;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* ================= TARJETAS ================= */
+
+.card-info {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(62, 39, 35, 0.12);
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-info:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(47, 55, 88, 0.18);
+}
+
+.icono-info {
+  font-size: 2.5rem;
+  color: #ff3030;
+  margin-bottom: 15px;
+}
+
+.card-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #2e233e;
+}
+
+.card-info p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ================= GALERÍA ELEGANTE ================= */
+
+.galeria-card {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* Esto la hace más alta que la de 16/9 */
+  overflow: hidden;
+  border-radius: 22px;
+  background-color: #e8e1d8;
+  border: 5px solid white;
+  box-shadow: 0 14px 35px rgba(62, 39, 35, 0.22);
+}
+
+.galeria-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.galeria-card:hover .galeria-img {
+  transform: scale(1.04);
+}
+
+.texto-galeria {
+  color: #4e48a3;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+/* ================= FORMULARIO ================= */
+
+.formulario {
+  background-color: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(62, 39, 35, 0.12);
+}
+
+.formulario label {
+  font-weight: bold;
+  color: #1f0076;
+}
+
+.formulario .btn-primary {
+  background-color: #45416d;
+  border-color: #49416d;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.formulario .btn-primary:hover {
+  background-color: #2b233e;
+  border-color: #30233e;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background-color: #180f23;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: #200064;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+}
+
+/* ================= BOTÓN FLOTANTE WHATSAPP ================= */
+
+.whatsapp-flotante {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+
+  width: 58px;
+  height: 58px;
+
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+  text-decoration: none;
+
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45);
+  z-index: 2000;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-flotante:hover {
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 14px 35px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-flotante.activo {
+  display: flex;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* ================= RESPONSIVE (Móvil) ================= */
+
+@media (max-width: 768px) {
+    /* 1. Hacemos que aparezca el botón */
+    .btn-menu {
+        display: block !important;
+        z-index: 1100;
+    }
+
+    /* 2. Configuramos el menú desplegable */
+    .menu-links {
+        display: none !important; /* <--- CRUCIAL: Esto lo mantiene escondido al cargar */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 0; 
+        margin: 0;
+        z-index: 1050;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Esta es la clase que el botón "prende" y "apaga" */
+    .menu-links.activo {
+        display: flex !important; /* <--- Al hacer clic, se vuelve visible */
+    }
+
+    /* 4. IMPORTANTE: Color de los enlaces */
+    .menu-links li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-links li a {
+        color: #35457b !important; /* Color azul oscuro para que se vea */
+        font-size: 1.2rem;
+        display: block;
+        padding: 10px;
+    }
+
+    .menu-links li a:hover {
+        background-color: #f0f0f0;
+        color: #ff3030 !important;
+    }
+
+    /* Ajuste del Hero para que no se vea gigante en el cel */
+    .hero3 h1 {
+        font-size: 2rem !important;
+    }
+}
+.header2 {
+  background-color: #35457b;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo2 {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+.menu-links2 {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-links2 li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu-links2 li a:hover {
+  color: #ffcc80;
+}
+
+.btn-menu2 {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.hero2 {
+  background: linear-gradient(
+    rgba(34, 38, 67, 0.545),
+    rgba(51, 58, 108, 0.82)
+  ),
+  url("../img/voley.png");
+
+  background-size: cover;
+  background-position: center 45%;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero2 h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero2 p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.menu-links3 {
+  font-size: 20px;
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-links3 li a {
+  text-decoration: none;
+  color: rgb(10, 0, 157);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu-links3 li a:hover {
+  color: #ffcc80;
+}
+/* Estilo para las tarjetas de posición en el catálogo */
+.card-posicion {
+    background-color: #fff;
+    transition: all 0.3s ease;
+    color: #5142f5;
+}
+
+.card-posicion:hover {
+    background-color: #676ccd; /* Color café al pasar el mouse */
+    color: white;
+    transform: translateY(-5px);
+}
+
+.card-posicion i {
+    color: #45376f;
+}
+.card-posicion:hover i {
+    color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body2 {
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(69, 138, 150);
+}
+
+.logo { font-size: 34px; 
+    font-weight: bold; 
+}
+
+nav ul { 
+    list-style: none; 
+    display: flex; 
+    gap: 25px; 
+}
+
+nav ul li a { 
+    color: rgb(118, 112, 209); 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover { 
+    color: white; }
+
+/* --- HERO --- */
+
+.hero3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(152, 115, 255, 0.333);
+    z-index: 1;
+}
+.hero-contenido3 { 
+    position: relative; 
+    z-index: 2;
+     text-align: center; 
+    }
+.hero-contenido3 h1 {
+     font-size: 48px; 
+     text-shadow: 2px 2px 4px black; 
+    }
+.btn2 {
+    display: inline-block;
+     background-color: rgb(83, 150, 177); 
+     color: white;
+    text-decoration: none; 
+    padding: 15px 35px; 
+    border-radius: 50px;
+    font-weight: bold; 
+    transition: 0.3s ease;
+}
+.btn2:hover {
+     background-color: rgb(107, 84, 211); 
+     transform: translateY(-4px); 
+    }
+
+/* Espacio de la foto */
+/* Estilos generales que ya tenías */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero3 {
+    background-color: #f0f0f0;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* --- ESTILOS DE LAS TARJETAS (NUEVO) --- */
+
+.foto-zapa {
+    height: 300px;
+    background-color: #f6f6f6;
+    background-size: 105%; /* Tamaño inicial */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 4px;
+    transition: background-size 0.4s ease;
+    cursor: pointer;
+}
+
+/* Efecto Zoom al pasar el mouse por la card */
+.card:hover .foto-zapa {
+    background-size: 125%;
+}
+
+.badge-desc {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #b33c1b;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.3rem;
+    color: #002b5c;
+    cursor: pointer;
+}
+
+.zapa-titulo {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #002b5c;
+    margin-top: 10px;
+}
+
+.zapa-cat {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.precio-final {
+    color: #002b5c;
+    font-weight: bold;
+}
+.menu-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.menu-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu-links li a:hover {
+  color: #180067;
+}
+
+.btn-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+/* --- ESTILOS BASE HERO3 --- */
+.hero3 {
+    background-image: url(../img/zapatillas.png);
+     background-size: 150% auto; 
+/* Esto agranda la imagen un 50% más del ancho del contenedor */
+   background-position: center 85%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    padding: 0 20px; /* Margen de seguridad para el texto */
+}
+
+.hero-contenido3 {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+}
+
+/* --- RESPONSIVE HERO3 --- */
+@media (max-width: 768px) {
+    .hero3 {
+        height: 80vh; /* Un poco más corto en móviles para ver contenido abajo */
+        background-position: 70% center; /* Mueve la imagen para que el modelo/zapatilla se vea mejor */
+    }
+
+    .hero-contenido3 h1 {
+        font-size: 2.2rem !important; /* Texto más pequeño para que no se corte */
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .hero-contenido3 p {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+    }
+
+    .btn2 {
+        width: 100%; /* El botón ocupa todo el ancho en móviles (más fácil de tocar) */
+        max-width: 250px;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Para celulares muy pequeños (iPhone SE, etc) */
+@media (max-width: 480px) {
+    .hero-contenido3 h1 {
+        font-size: 1.8rem !important;
+    }
+}
+/* Esta clase controla la imagen de fondo de esta página específica */
+.hero-inicio {
+    background: linear-gradient(rgba(9, 41, 158, 0.318), rgba(65, 41, 111, 0.312)), 
+                url('../img/peloota.png'); /* Asegúrate que la ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Para que ocupe toda la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .hero-inicio {
+        height: 80vh; /* Un poco más corto en móviles para ver contenido abajo */
+        background-position: 70% center; /* Mueve la imagen para que el modelo/zapatilla se vea mejor */
+    }
+  }
+  /* Clase que aplicaremos con JS */
+.heart-icon.active {
+    color: #ff3030 !important; /* Rojo intenso */
+    transform: scale(1.2);      /* Un pequeño efecto de aumento */
+    transition: all 0.3s ease;
+}
+
+/* Para que se vea como un puntero al pasar el mouse */
+.heart-icon {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.hero-inicio2 {
+    background: linear-gradient(rgba(9, 41, 158, 0.318), rgba(65, 41, 111, 0.312)), 
+                url('../img/yukii.png'); 
+    background-size: cover;
+    background-position:center 85%;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .hero-inicio2 {
+        height: 80vh; /* Un poco más corto en móviles para ver contenido abajo */
+        background-position: 50% center; /* Mueve la imagen para que el modelo/zapatilla se vea mejor */
+    }
+  }
+  .esquema-posiciones {
+    max-width: 900px; /* Ajusta este número según qué tan grande quieras la foto */
+    border-radius: 15px; /* Bordes redondeados para que combine con tus cards */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Una sombra suave */
+    border: 2px solid #35457b; /* Un borde fino del color de tu header */
+    margin-bottom: 50px; /* Espacio abajo para que no choque con el footer */
+}
+/* --- Sección Libero --- */
+.hero-libero {
+    background: linear-gradient(rgba(31, 44, 88, 0.453), rgba(34, 13, 108, 0.481)), url('../img/libero.jpg');
+    background-position:center 33%;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.btn-libero {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #1a1a81;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-libero:hover {
+    background-color: #291a54;
+    color: white;
+}
+
+.lista-caracteristicas {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-caracteristicas li {
+    margin-bottom: 10px;
+}
+
+.lista-caracteristicas i {
+    color: #1a1a81;
+    margin-right: 10px;
+}
+
+.box-destacado {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #dee2e6;
+}
+
+.box-destacado i {
+    font-size: 4rem;
+    color: #1a1a81;
+}
+
+/* --- Jerarquía de Equipamiento --- */
+/* --- Estilos de Prioridad en Tienda --- */
+
+/* Contenedor de la tarjeta principal */
+.tarjeta-prioridad-alta {
+    border-width: 2px !important;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-prioridad-alta:hover {
+    transform: scale(1.02);
+}
+
+/* Etiquetas (Labels) */
+.prioridad-label-alta {
+    background-color: #1a1a81;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.prioridad-label-media {
+    background-color: #31638f;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.prioridad-label-baja {
+    background-color: #84abd2;
+    color: #000000;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #dee2e6;
+}
+.hero-colocador {
+    background: linear-gradient(rgba(31, 44, 88, 0.453), rgba(34, 13, 108, 0.481)), url('../img/colocador.png');
+    background-position:center 45%;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero-punta {
+    background: linear-gradient(rgba(31, 44, 88, 0.453), rgba(34, 13, 108, 0.481)), url('../img/takahashii.png');
+    background-position:center 35%;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero-central {
+    background: linear-gradient(rgba(31, 44, 88, 0.453), rgba(34, 13, 108, 0.481)), url('../img/central.png');
+    background-position:center 35%;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
