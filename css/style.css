@@ -616,7 +616,7 @@ nav ul li a {
 /* --- RESPONSIVE HERO3 --- */
 @media (max-width: 768px) {
     .hero3 {
-        height: 80vh; /* Un poco más corto en móviles para ver contenido abajo */
+        height: 70vh; /* Un poco más corto en móviles para ver contenido abajo */
         background-position: 70% center; /* Mueve la imagen para que el modelo/zapatilla se vea mejor */
     }
 
@@ -694,7 +694,7 @@ nav ul li a {
   }
   @media (max-width: 768px) {
     .esquema-posiciones {
-        height: 35vh; /* Un poco más corto en móviles para ver contenido abajo */
+        height: 33vh; /* Un poco más corto en móviles para ver contenido abajo */
         background-position: 50% center; /* Mueve la imagen para que el modelo/zapatilla se vea mejor */
     }
   }
