@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Net Point</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome para iconos -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <nav class="container nav-container">
+
+      <h1 class="logo">Net Point</h1>
+
+      <button id="btn-menu" class="btn-menu" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul id="menu-links" class="menu-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h2>¡Tus productos de confianza!</h2>
+
+        <p>
+          ¿Buscas productos de voley, pero nunca encuentras de buena calidad? no te preocupes, ¡Aquí tenemos de todo!
+        </p>
+
+        <a href="catalogo.html" class="btn btn-light mt-3">
+          Catálogo
+        </a>
+      </div>
+    </section>
+
+    <!-- INFORMACIÓN DEL NEGOCIO -->
+    <section id="Posiciones" class="container my-5">
+      <h2 class="text-center mb-4">Lo más vendido</h2>
+<div class="row text-center">
+   <div class="col-md-4 mb-3">
+    <a href="zapatillas.html" class="text-decoration-none">
+      <div class="card-posicion p-4 border rounded shadow-sm">
+        <i class="fa-solid fa-socks fa-3x mb-2"></i>
+        <h3>Zapatillas</h3>
+        <p class="text-muted">Máxima amortiguación y agarre</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Tarjeta Colocador -->
+  <div class="col-md-4 mb-3">
+    <a href="pelota.html" class="text-decoration-none">
+      <div class="card-posicion p-4 border rounded shadow-sm">
+        <i class="fa-solid fa-volleyball fa-3x mb-2"></i>
+        <h3>Pelotas</h3>
+        <p class="text-muted">Modelos oficiales de competencia</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Tarjeta Puntas -->
+  <div class="col-md-4 mb-3">
+    <a href="camisetas.html" class="text-decoration-none">
+      <div class="card-posicion p-4 border rounded shadow-sm">
+        <i class="fa-solid fa-shirt fa-3x mb-2"></i>
+        <h3>Camisetas</h3>
+        <p class="text-muted">Camisetas aptas para ejercicio</p>
+      </div>
+    </a>
+  </div>
+    </section>
+<section id="galeria" class="container my-5">
+      <h2 class="text-center mb-4">Nuestros productos</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-5">
+
+          <div class="galeria-card">
+            <img
+              id="imagen-galeria"
+              src="img/image-6.webp"
+              alt="Producto de Dulce Aroma Café"
+              class="galeria-img"
+            />
+          </div>
+
+          <p class="mt-3 text-center texto-galeria">
+            Nuestra galería cambia automáticamente cada 3 segundos.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section id="contacto" class="container my-5">
+      <h2 class="text-center mb-4">Realiza tu compra</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+
+          <form id="form-contacto" class="formulario">
+
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                class="form-control"
+                placeholder="Ingresa tu nombre completo"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Ingresa tu correo electronico"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="comentario" class="form-label">Compra</label>
+              <textarea
+                id="comentario"
+                class="form-control"
+                rows="4"
+                placeholder="Ingresa tu producto"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">
+              Enviar comentario
+            </button>
+
+          </form>
+
+        </div>
+      </div>
+      
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p class="mb-3">Síguenos en nuestras redes sociales</p>
+
+    <div class="social-icons">
+      <i id="instagram" class="fa-brands fa-instagram social-icon"></i>
+      <i id="tiktok" class="fa-brands fa-tiktok social-icon"></i>
+      <i id="whatsapp" class="fa-brands fa-whatsapp social-icon"></i>
+    </div>
+
+    <p class="mt-4 mb-0">
+      &copy; 2026 Net Point. Todos los derechos reservados.
+    </p>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <a
+    id="whatsapp-flotante"
+    class="whatsapp-flotante"
+    href="https://wa.me/xxxxxx"
+    target="_blank"
+    aria-label="Contactar por WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- JS propio -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>

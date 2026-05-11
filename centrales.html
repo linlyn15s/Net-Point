@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrales</title>
+     <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+    <nav class="container nav-container">
+
+      <h1 class="logo">Centrales</h1>
+
+      <button id="btn-menu" class="btn-menu" aria-label="Abrir menú">
+    <i class="bi bi-list"></i> <!-- Cambiado a Bootstrap Icon -->
+</button>
+      <ul id="menu-links" class="menu-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#InfoLibero">Información</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <!-- SECCIÓN HERO LÍBERO -->
+<section class="hero hero-central">
+    <div class="hero-contenido-libero">
+        <h1>Especialista en Bloqueo y Disuasión.</h1>
+        <p>Altura, reflejos y el bloqueo imparable. La primera línea de defensa de tu equipo.</p> 
+        <a href="#InfoLibero" class="btn-libero">Ver más</a>
+    </div>
+</section>
+
+<!-- INFORMACIÓN DE LA POSICIÓN -->
+<section id="InfoLibero" class="container mt-5">
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <h2 class="titulo-posicion">¿Qué es el central?</h2>
+            <p class="descripcion-posicion">El central es el especialista en el juego sobre la red. Su misión principal es el bloqueo, utilizando su altura y lectura de juego para neutralizar los ataques rivales. Además, es el responsable de los ataques rápidos de "primer tiempo" para descolocar a la defensa contraria.</p>
+            <ul class="lista-caracteristicas">
+                <li><i class="bi bi-check-circle-fill"></i> Lectura de Juego: Anticipa hacia dónde armará el colocador rival.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Desplazamiento Lateral: Velocidad pura para llegar a cerrar las bandas.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Ataque Rápido: Ejecuta remates veloces antes de que el bloqueo rival se forme.</li>
+            </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+           <div class="box-destacado">
+    <i class="bi bi-bricks"></i>
+    <h4>"La Muralla de la Red"</h4>
+</div>
+        </div>
+    </div>
+</section>
+
+<!-- EQUIPAMIENTO POR JERARQUÍA -->
+<section id="EquipamientoLibero" class="container mt-5 mb-5">
+    <div class="row">
+        <h2 class="mb-4">Equipamiento para Colocadores</h2>
+        
+        <!-- PRIORIDAD 1: ALTA (MÁS IMPORTANTE) -->
+        <!-- Ocupa col-md-6 para destacar visualmente sobre el resto -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 border-primary tarjeta-prioridad-alta">
+                <div class="prioridad-label-alta">Prioridad Máxima</div>
+                <div class="foto-zapa" style="background-image: url('img/image-8.webp'); height: 350px;">
+                    <span class="badge-desc">-30%</span>
+                    <i class="bi bi-heart heart-icon"></i>
+                </div>
+                <div class="card-body">
+                    <h4 class="zapa-titulo">Zapatillas ASICS GEL-Rocket 12 - Masculino - Azul </h4>
+                    <p class="zapa-cat">Calzado Especializado</p>
+                    <p class="zapa-precio">
+                    <span class="text-muted text-decoration-line-through small">$89.990</span> | 
+                        <span class="precio-final">$62.993</span>
+                    </p>
+                    <p class="mt-2 text-muted">Diseñadas específicamente para jugadores que saltan constantemente. Su tecnología reduce la presión en las rodillas y tobillos.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRIORIDAD 2: MEDIA -->
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+               <div class="prioridad-label-media">Esencial</div>
+                <div class="foto-zapa" style="background-image: url('img/rodilleras.png');">
+                    <span class="badge-desc">-20%</span>
+                    <i class="bi bi-heart heart-icon"></i>
+                </div>
+                <div class="card-body px-0">
+                    <h5 class="zapa-titulo">Rodilleras Voleibol MIKASA Profesional Junior</h5>
+                    <p class="zapa-cat">Protección</p>
+                    <p class="zapa-precio">
+                        <span class="text-muted text-decoration-line-through small">$28.990</span> | 
+                        <span class="precio-final">$23.192</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRIORIDAD 3: BAJA -->
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="prioridad-label-baja">Accesorio</div>
+                <div class="foto-zapa" style="background-image: url('img/tapes.png');">
+                    <i class="bi bi-heart heart-icon"></i>
+                </div>
+                <div class="card-body px-0">
+                    <h5 class="zapa-titulo">Recovery Cinta Deportiva Rigida 2.5cmx9.1mt</h5>
+                    <p class="zapa-cat">Cuidado de dedos.</p>
+                    <p class="zapa-precio">
+                        <span class="precio-final">$3.290</span>
+                    </p>
+                    <p class="mt-2 text-muted">Vital para prevenir esguinces o "dedo en martillo". Permite vendar las articulaciones débiles sin perder la sensibilidad.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<footer class="footer">
+
+    <p class="mt-4 mb-0">
+      &copy; 2026 Net Point. Todos los derechos reservados.
+    </p>
+  </footer>
+<!-- LUEGO LOS SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app2.js"></script>
+
+
+</body>
+</html>
